@@ -2,7 +2,7 @@ const isPrime = (n) => {
   if (n == 1) {
     console.log("1 is neither prime nor composite");
   } else {
-    for (var i = 2; i <= n - 2; i++) {
+    for (var i = 2; i < n; i++) {
       if (n % i == 0) {
         return false;
       } else {
@@ -11,5 +11,5 @@ const isPrime = (n) => {
     }
   }
 };
-var PrimeNumber = isPrime(8);
+var PrimeNumber = isPrime(3);
 console.log(PrimeNumber);

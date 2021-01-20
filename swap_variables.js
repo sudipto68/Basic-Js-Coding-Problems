@@ -10,7 +10,11 @@ console.log(a, b);
 
 // without using temporary variable
 
-a = a + b;
-b = a - b;
-a = a - b;
+// a = a + b;
+// b = a - b;
+// a = a - b;
+// console.log(a, b);
+
+// using js method
+[a, b] = [b, a];
 console.log(a, b);
